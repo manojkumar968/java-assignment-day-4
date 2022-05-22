@@ -1,0 +1,9 @@
+package com.masai;
+
+public class Address {
+
+	String village;
+	String city;
+	long pincode;
+	String state;
+}

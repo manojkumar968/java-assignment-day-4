@@ -1,0 +1,14 @@
+package com.masai;
+
+public class Employee {
+	
+	void fun1(Address a) {
+		System.out.println(a);
+		a.printadd();
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.fun1(new Address());
+	}
+}

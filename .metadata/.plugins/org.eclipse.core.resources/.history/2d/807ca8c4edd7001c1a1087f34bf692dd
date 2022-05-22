@@ -1,0 +1,26 @@
+package com.masai;
+
+public class Employee {
+	
+	String id;
+	String name;
+	double salary;
+	Address address;
+	
+	void employeeDetail() {
+		System.out.println("EmployeeDetail");
+		System.out.println("id"+"-"+id);
+		System.out.println("name"+"-"+name);
+		System.out.println("salary"+"-"+salary);
+		System.out.println("address"+"-"+address);
+		
+		address.printadd();
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.address=new Address();
+		e1.employeeDetail();
+		
+	}
+}

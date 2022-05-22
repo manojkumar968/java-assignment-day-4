@@ -1,0 +1,14 @@
+package com.masai;
+
+public class Employee {
+	int i=10;
+	void fun1(int b, long l) {
+		System.out.println("inside int long "+b+" "+l);
+		System.out.println(this.i);
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.fun1(10,(long)10);
+	}
+}

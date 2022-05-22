@@ -1,0 +1,49 @@
+package com.bankDetail;
+
+public class AccountDetails {
+
+	
+	public Account getAccountDetails(int accountId,String accountType,int balance) {
+		
+		Account a=new Account();
+		a.setAccountId(accountId);
+		a.setAccountType(accountType);
+		if(balance<=0) {
+			System.out.println("Balance should be positive");
+			return null;
+		}
+		else {
+			a.setBalance(balance);
+		}
+		return a;	
+		
+	}
+	
+	public int getWithdrawAmount(int widAmount) {
+		if(widAmount<=0) {
+			return 0;
+		}
+		else {
+			return widAmount;
+		}
+	}
+	public static void main(String[] args) {
+		
+		AccountDetails ad=new AccountDetails();
+		Account a=ad.getAccountDetails(101, "saving", 5000);
+		
+		int widAmount=ad.getWithdrawAmount(500);
+		if(widAmount==0) {
+			System.out.println("Amount should be positive");
+		}
+		else {
+			if(a!=null) {
+				boolean boo=a.withdraw(widAmount);
+				if(boo==false) {
+					System.out.println("Sorry!!! No enough balance");
+				}
+				
+			}
+		}
+	}
+}

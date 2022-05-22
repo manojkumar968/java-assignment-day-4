@@ -1,0 +1,10 @@
+package com.collage;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Student s1=new Student(123,"Manoj","Mohlara");
+		s1=s1.getStudent(true);
+		System.out.println(s1.name);
+	}
+}

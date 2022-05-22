@@ -1,0 +1,9 @@
+package com.masai;
+
+public class Address {
+	
+	void printadd() {
+		System.out.println("inside Address class");
+		
+	}
+}

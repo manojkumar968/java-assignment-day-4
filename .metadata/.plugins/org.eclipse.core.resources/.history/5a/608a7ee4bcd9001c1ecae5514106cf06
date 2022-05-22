@@ -1,0 +1,5 @@
+package com.salaryCalculation;
+
+public class Main {
+	Employee.getEmployeeDetails(101,"Vivek",20000.0);
+}

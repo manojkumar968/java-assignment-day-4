@@ -1,0 +1,38 @@
+package com.student;
+
+public class Main {
+	
+	Student s=new Student();
+	
+	Main(){
+		
+	}
+	
+	Main(int roll,String name,int age,int markes){
+		name=name;
+		roll=roll;
+		age=age;
+		markes=markes;
+	}
+
+	public static void main(String[] args) {
+		Main m1=new Main();
+		m1.s.printDetail();
+		m1.s.setRoll(12345);
+		m1.s.setName("Manoj");
+		m1.s.setAge(25);
+		m1.s.setMarkes(400);
+		System.out.println("---Print detail by gtter method---");
+		System.out.println(m1.s.getRoll());
+		
+		System.out.println(m1.s.getAge());
+		System.out.println(m1.s.getMarkes());
+		
+		
+		Main m2=new Main(54321,"Parveen",30,450);
+		System.out.println("---Print detail by PrintDetail method---");
+		System.out.println(m2.s.getName());
+		m2.s.printDetail();
+		
+	}
+}

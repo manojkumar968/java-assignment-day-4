@@ -1,0 +1,38 @@
+package com.masai;
+
+public class Employee {
+	
+	String id;
+	String name;
+	double salary;
+	Address address;
+	
+	void employeeDetail() {
+		System.out.println("EmployeeDetail");
+		System.out.println("id"+"-"+id);
+		System.out.println("name"+"-"+name);
+		System.out.println("salary"+"-"+salary);
+//		System.out.println("address"+"-"+address);
+		
+		address.printadd();
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.address=new Address();
+		e1.employeeDetail();
+		
+		e1.id="123abc";
+		e1.name="manoj";
+		e1.salary=50000;
+		
+		e1.address.village="mohlara";
+		e1.address.city="ateli";
+		e1.address.pincode=123021;
+		e1.address.state="haryana";
+		
+		e1.employeeDetail();
+		
+		
+	}
+}

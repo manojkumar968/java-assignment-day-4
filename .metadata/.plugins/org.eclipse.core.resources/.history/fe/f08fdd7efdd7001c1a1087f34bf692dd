@@ -1,0 +1,17 @@
+package com.masai;
+
+public class Employee {
+	
+	void fun1(byte b) {
+		System.out.println("inside byte"+b);
+		
+	}
+	void fun1(int i) {
+		System.out.println("inside int"+i);
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		e1.fun1(10);
+	}
+}

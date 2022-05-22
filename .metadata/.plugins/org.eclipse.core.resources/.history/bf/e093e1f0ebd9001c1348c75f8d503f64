@@ -1,0 +1,6 @@
+package com.Scanner;
+
+import java.util.Scanner;
+public class ScannerTest {
+
+}

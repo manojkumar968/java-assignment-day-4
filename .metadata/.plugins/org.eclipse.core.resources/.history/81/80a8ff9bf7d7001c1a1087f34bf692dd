@@ -1,0 +1,15 @@
+package com.masai;
+
+public class Employee {
+	
+	void fun1(Address a) {
+		System.out.println(a);
+		a.printadd
+	}
+	
+	public static void main(String[] args) {
+		Employee e1=new Employee();
+		double num=100000000000.0;
+		e1.fun1((int)num);
+	}
+}

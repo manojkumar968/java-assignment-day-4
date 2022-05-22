@@ -1,0 +1,41 @@
+package com.ticketPriceCalculaton;
+
+public class Ticket {
+
+	private int ticketid;
+	private int price; 
+	private  static int availableTickets; 
+	
+	
+	setTicketid(int ticketid) {
+		ticketid=ticketid;
+	}
+	
+	int getTicketid() {
+		return ticketid;
+	}
+	
+	int getPrice() {
+		return price;
+	}
+	
+	int getAvailableTickets() {
+		return availableTickets;
+	}
+	
+	void setAvailableTickets(int availableTickets){
+		if(availableTickets>0) {
+			Ticket.availableTickets=availableTickets;
+		}
+	}
+	
+	public int calculateTicketCost(int nooftickets) {
+		if(nooftickets<=Ticket.availableTickets) {
+			int totalPrice=nooftickets*price;
+			Ticket.availableTickets-=nooftickets;
+			return totalPrice;
+		}
+		
+		return -1;
+	}
+}
