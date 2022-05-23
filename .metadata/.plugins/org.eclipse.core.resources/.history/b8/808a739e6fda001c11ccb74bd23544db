@@ -10,6 +10,6 @@ public class ScannerTest {
 		String name=scanner.nextLine();
 		System.out.println("Name: "+name);
 		String name2=scanner.nextLine();
-		String name3=scanner.nextLine();		
+		
 	}
 }
