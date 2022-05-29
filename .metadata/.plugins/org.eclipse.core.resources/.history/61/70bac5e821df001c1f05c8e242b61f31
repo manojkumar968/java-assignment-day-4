@@ -1,0 +1,11 @@
+package masi.com;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		Student s=new Student();
+		s.displayDetails();
+		System.out.println(s.toString());;
+		System.out.println("end");
+	}
+}

@@ -1,0 +1,9 @@
+package com.masai;
+
+public class Child {
+
+	@Override
+	void method1() {
+		System.out.println("method1 belong to child class");
+	}
+}
