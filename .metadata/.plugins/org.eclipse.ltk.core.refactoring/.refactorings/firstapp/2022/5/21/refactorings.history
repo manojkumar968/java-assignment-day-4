@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.masai.employ&apos; to &apos;Employee&apos;&#x0D;&#x0A;- Original project: &apos;firstapp&apos;&#x0D;&#x0A;- Original element: &apos;com.masai.employ&apos;&#x0D;&#x0A;- Renamed element: &apos;com.masai.Employee&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;employ&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.masai{employ.java[employ" matchStrategy="1" name="Employee" qualified="false" references="true" similarDeclarations="false" stamp="1653013576891" textual="false" version="1.0"/>
-</session>
