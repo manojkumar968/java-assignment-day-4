@@ -4,9 +4,8 @@ package com.masai;
 public class Main {
 
 	public static Person generatePerson(Person person) {
+		Scanner sc=new Scanner(System.in);
 		if(person instanceof Student) {
-			
-			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter student id");
 			int id=sc.nextInt();
 			System.out.println("Enter courseEnrolled");
@@ -26,7 +25,7 @@ public class Main {
 			
 		}
 		
-			Scanner sc=new Scanner(System.in);
+//			Scanner sc=new Scanner(System.in);
 			System.out.println("Enter instructor id");
 			int id=sc.nextInt();
 			System.out.println("Enter course salary");
